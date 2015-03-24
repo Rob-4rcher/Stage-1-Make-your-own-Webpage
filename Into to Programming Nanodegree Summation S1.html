@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Into to Programming Nanodegree Summation</title>
+	<meta charset = "utf-8">
+	<link href="Stage 1 CSS.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="stage">
+	<h1>Project Stage 0: Introduction to Programming</h1>
+	<div class="section">
+		<h2>Important Concepts</h2>
+			<h3>The Basics of the Web and HTML</h3>
+			<br>
+			<span class="note">Think like a Programmer</span>
+			<ol>
+				<li>Procedural Thinking: <em>clear and unambiguous instructions</em></li>
+				<li>Abstract Thinking: <em>generality amongst seemingly different</em></li>
+				<li>Systems Thinking: <em>break big problem into smaller problem</em></li>
+				<li>Technological Empathy: <em>understand computer</em></li>
+				<li>Debugging:
+						<ol>
+						<li>Collect evidence</li>
+						<li>Generate theories</li>
+						<li>Test those theories</li>
+						<li>Fix the problem</li>
+						</ol>
+				</li>
+			</ol>
+			<b>Why Computers are Stupid</b>
+			<p>Computers are stupid because they follow given instructions regards if they are correct or incorrect.
+			</p>
+			<p><b>Information Transfer</b> <em>How the internet works</em>
+			<br>
+			<br>
+			Client <em>to and from</em> Internet <em>to and from</em> Servers
+			<br>
+			<br>
+			<em>to and from = </em> <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol"><dfn><abbr title="Hypertext Transfer Protocol">HTTP</abbr></dfn></a> = Hyper Links
+			</p>
+			<br>
+			<b>What is HTML</b><br>
+			<dfn><abbr title="HyperText Mark-up Language">HTML</abbr></dfn> is the standard mark-up language for creating web pages.
+				<div>HTML consists of:
+					<ul>
+						<li>Text Content</li>
+						<li>Mark Up</li>
+						<li>Ref to Other Documents</li> 
+						<li>Links</li>
+					</ul>
+				</div>
+			
+			HTML uses mark ups to define contents these are called <i>tags</i>, these also help in defining white-space and how that space is viewed.
+			<br>
+			This is referred to as Mark Up
+			<br>
+			<p>&lt;<dfn><abbr title="Open Tag">tag name</abbr></dfn>&gt;Contents &lt;<dfn><abbr title="Close tag">/tag name</abbr></dfn>&gt;
+			<br>
+			<span style="color:crimson;font-weight:bold">This forms an <u>element</u></span>
+			</P>
+			Element Types = In-line & Block
+			<br>
+			<br>
+			Some examples of tags and their uses:
+			<br>
+			&lt;a&gt; anchor <u>in-line</u><br>
+			&lt;br&gt; line break <u>In-line</u> <em>Void tag requires no close</em>
+			<br>
+			&lt;p&gt; paragraph <u>Block</u>
+			<br>
+			&lt;img src=&quot;url&quot; alt = &quot;text&quot;&gt; image tag <u>In-line</u>
+			<br>
+			<a href="http://www.w3schools.com/tags/default.asp"> A list of HTML references or Tags</a><br>
+			<br>
+	</div>
+</div>
+<div class="stage">
+	<h1>Project Stage 1: Make your Web Page</h1>
+	<br>
+	<span class="note">Web-pages, Documents and Structure</span>
+	<br>
+
+		<div class="section">
+			<h3>Lesson 1: The Basics of the Web & HTML</h3>
+			
+			<p>			HTML documents also have additional information<br>
+			Most would start with a document type and most would be HTML.<br>
+			&lt;!DOCTYPE HTML&gt;<br>
+			This is followed by the head<br>
+			This contain meta-data, JavaScript & CSS data.<br>
+			This is followed by the body.
+			<br>
+			This is the viewed part of the HTML
+			</p>
+
+			<br>
+		</div>
+
+		<div class="section">
+			<h3>Lesson 2: Creating a Structured Document with HTML</h3>
+				<p>The way a page is built is in a logic structure.<br>
+					This is much like tree from roots to leaves.where the web page is the root and individual sections grows from that.<br>
+					The &lt;div&gt; tag and &lt;table&gt; tag are ways to divide up a page into sections.<br>
+					Developer Tools (in browsers) can be used to view code and structure of a HTML document or web page.
+				</p>
+				<p>
+					<dfn><abbr title="HyperText Mark-up Language">HTML</abbr></dfn> the standard mark-up language used to create web pages.<br>
+					<dfn><abbr title="Cascading Style Sheets">CSS</abbr></dfn> style sheet language used for describing the look and formatting of a document written in a mark-up language.<br>
+					<dfn><abbr title="Document Object Model">DOM</abbr></dfn> a cross-platform and language-independent convention for representing and interacting with objects in HTML (and other mark-up languages). The nodes of every document are organized in a tree structure, called the DOM tree.
+				</p>
+					<div class="box1">
+						Boxes
+						<div class="box2">
+							Boxes
+							<div class="box3">
+								Boxes
+							</div>
+						</div>
+					</div>
+				<p>
+					A web page can be divided into lots of boxes. Any thing or shape on a page is surrounded by a box. Smaller boxes fit into large and larger box until you reach the root of the tree being the web page.<br>The structure of the page would follow these defined boxes and be divided into sections of code, usually achieved with the use of the &lt;div&gt; tag. In the code these sections are indented to show nested sections.
+				</p>
+
+
+		</div>
+
+
+		<div class="section">
+			<h3>Lesson 3: Adding CSS style to HTML Structure</h3>
+			<br>
+			<span class="note">Don't repeat yourself</span>
+
+			<p>
+				Cascading refers to the inheritance of the rule or style with the most specific rule been applied.<br>
+				CSS uses <em>selectors</em> to define a style. This can be a tag type or a defined class.<br>
+				Example p{ } or .description{ }. The attributes are then defined inside the brackets.<br>
+				A <em>declaration</em> is property and has a set value.<br>
+			</p>
+			CSS can be linked into a HTML document in 3 ways:
+			<ul>
+				<li>Referenced css file</li>
+				<li>In the Head of the document</li>
+				<li>in-line with html code</li>
+			</ul>
+			<span class="note">Code - Test - Refine </span>
+			
+		</div>
+
+</div>
+
+
+</body>
+
+</html>
